@@ -1,0 +1,131 @@
+.about {
+    background: #f3f4f4;
+    /* height: 90vh; */
+
+}
+
+.heading {
+    text-align: center;
+    text-decoration: underline 3px solid crimson;
+}
+
+.head-sec {
+    color: crimson;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 10px;
+    align-content: center;
+}
+
+.wrapper .right {
+    flex: 1 1;
+
+}
+
+.pers-info {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.bold {
+    font-weight: 600;
+
+}
+
+.downloadcv-btn >*{
+color: #000;
+text-decoration: none;
+}
+.about-con {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-con .label {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.about-con .icon-cont {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.about-con .icon-cont a {
+    font-size: 2rem;
+    color: crimson;
+    box-shadow: 2px 2px 0px 3px rgb(245 20 20 / 82%);
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 40px;
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+.about-con .icon-cont a:hover {
+    color: rgb(245, 4, 4);
+    box-shadow: none;
+    transition: all 0.3s ease-in;
+}
+
+.educ-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.educ-info .box {
+    flex: 1 1 150px;
+    width: 150px;
+    height: 150px;
+    /* border: 0.5px solid black; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f3f4f4;
+    box-shadow: 10px 10px 20px 1px #d0d0d0, -10px -10px 20px #ffffff;
+    cursor: pointer;
+
+}
+
+.educ-info .box .content {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.educ-info .box .val {
+    font-size: 3rem;
+    font-weight: 800;
+    color: crimson;
+}
+
+
+
+
+@media screen and (max-width:900px){
+    .wrapper {
+        flex-direction: column;
+        padding: 0px 50px;
+        align-items: center;
+    }
+} 

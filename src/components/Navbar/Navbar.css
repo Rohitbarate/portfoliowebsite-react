@@ -1,0 +1,197 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 10vh;
+    background-color: rgb(197, 252, 233);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.funct-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 10px;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.menu-btn{
+    position: relative;
+    right: 0px;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* background: rebeccapurple; */
+    height: 40px;
+    width: 40px;
+    align-content: space-around;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+}
+.menu-btn span{
+    content: "";
+    background: #000;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    margin: 3px 0px;
+    transition: all 0.5s ease;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.items ul{
+    display: flex;
+    flex-direction: row;
+}
+.items ul li{
+    margin: 0px 15px;
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+position: relative;
+} 
+.items ul li::after{
+position: absolute;
+width: 0%;
+height: 10%;
+content: "";
+background-color: crimson;
+border-radius: 10px;
+bottom: 0;
+    left: 0;
+    transition: all 0.2s ease;
+}
+.items ul li:hover::after{
+    width: 100%;
+}
+.btn{
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 2px solid crimson;
+    border-radius: 30px;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3 s ease-in;
+    color: #000;
+}
+.btn-contact{
+    margin: 0px 10px;
+}
+.btn:hover{
+    /* border: none; */
+    background-color: rgb(224, 43, 79);
+}
+.btn-contact:hover{
+    background-color: #f0f0f0;
+    color: rgb(240, 6, 52);
+
+}
+.active{
+    color: rgb(240, 6, 52);
+}
+
+
+
+@media screen and (max-width:800px){
+    .navbar{
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    }
+  .items{
+    flex-direction: column;
+    font-size: 5rem;
+    flex-wrap: nowrap;
+    background-color: #ddd4d6;
+    left: -80%;
+    height: 100vh;
+    top: 10vh;
+    position: absolute;
+    justify-content: flex-start;
+    row-gap: 10px;
+    width: 200px;
+    transition: all 0.3s ease-in;
+  }
+  .items ul{
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 0px;
+  }
+  .items ul li{
+    font-size: 2rem;
+    border-bottom: 1px solid red;
+    width: 100%;
+    text-align: center;
+    margin: 18px 15px;
+}
+.btn-contact{
+    margin: 0px 10px;
+    width: 80%;
+}
+.funct-row{
+    width: 100%;
+}
+.menu-btn{
+    display:flex ;
+}
+.navactive{
+    background-color: red;
+}
+.active>:nth-child(1){
+animation: ease-in 0.4s top forwards;
+}
+.active>:nth-child(2){
+    transform: scaleY(0);
+}
+.active>:nth-child(3){
+animation: ease-in 0.4s bottom forwards;
+}
+
+}
+
+@keyframes top{
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 9px;
+    }
+    100%{
+        top: 10px;
+        transform: rotate(-45deg);
+        transform-origin: center;
+
+    }
+}
+@keyframes bottom{
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 9px;
+    }
+    100%{
+        bottom: 10px;
+        transform: rotate(45deg);
+        transform-origin: center;
+    }
+}

@@ -1,0 +1,58 @@
+body{
+    background: #f3f4f4;
+
+}
+.contact{
+    /* height: 80vh; */
+    margin-top: 30px;
+    background: #f3f4f4;
+
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cont-right{
+    flex: 1 1;
+    padding: 10px 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 1rem;
+}
+.inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px 1rem;
+}
+.inputBox input{
+    border-radius: 5rem;
+    border: none;
+    padding: 1rem 1.8rem;
+    font-size: 1rem;
+    text-transform: none;
+    margin: 0.7rem 0;
+    flex: 1;
+    background: #f3f4f4;
+    box-shadow: 10px 10px 20px 1px #d0d0d0, -10px -10px 20px #ffffff;
+}
+textarea{
+    width: 100%;
+    border-radius: 1rem;
+    resize: none;
+    height: 10rem;
+    font-size: 1rem;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #f3f4f4;
+    box-shadow: 10px 10px 20px 1px #d0d0d0, -10px -10px 20px #ffffff;
+    border: none;
+}
+.submit-btn{
+    margin: 20px;
+}

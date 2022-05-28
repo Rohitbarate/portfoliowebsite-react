@@ -1,8 +1,6 @@
 .section {
     padding: 20px 20px;
     gap: 40px;
-    /* margin: 20px 0px; */
-
 }
 
 .home {
@@ -17,7 +15,6 @@
     flex: 1 1;
     position: relative;
     padding: 20px;
-    /* background-color: rgb(138, 253, 153); */
     overflow: hidden;
 }
 
@@ -63,7 +60,6 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: #bb00ff; */
     height: 300px;
     width: 300px;
     margin: auto;
@@ -74,7 +70,6 @@
     background-color: rgb(24, 84, 250);
     height: 100%;
     width: 100%;
-    /* clip-path: polygon(32% 0, 100% 24%, 50% 100%, 0% 50%); */
     position: absolute;
     z-index: 2;
     top: 0%;
@@ -90,18 +85,13 @@
     background-color: rgb(250, 24, 36);
     height: 100%;
     width: 100%;
-    /* clip-path: polygon(41% 0, 100% 52%, 47% 97%, 0 76%); */
     position: absolute;
     right: 13%;
     z-index: 2;
     top: 0%;
-    /* left: 1vw; */
     transform: rotateZ(50deg);
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     font-size: 13rem;
-    transition: all 0.4s ease;
+    transition: all 1s ease;
     transform-style: preserve-3d;
 }
 
@@ -127,6 +117,9 @@
 .temp2-front p {
     transform: rotateZ(-97deg);
 }
+.temp2-back p {
+    transform: rotateZ(45deg);
+}
 
 
 .center img {
@@ -136,8 +129,7 @@
 }
 
 .center:hover .temp2 {
-    transform: rotateY(180deg);
-
+    transform: rotateY(180deg) rotateZ(40deg);
 }
 
 @media screen and (max-width:1200px) {

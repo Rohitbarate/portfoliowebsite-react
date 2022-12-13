@@ -41,7 +41,7 @@ const About = () => {
                             <a href="https://www.instagram.com/__rohit_barate/" target="_blank" rel="noreferrer" > <BsInstagram /> </a>
                             <a href="https://www.linkedin.com/in/rohit-barate100/" target="_blank" rel="noreferrer" > <BsLinkedin /> </a>
                             <a href="https://www.facebook.com/rohit.barate.31/" target="_blank" rel="noreferrer" > <BsFacebook /> </a>
-                            <a href="https://api.whatsapp.com/send/?phone=919822544067&text=hi" target="_blank" rel="noreferrer" > <BsWhatsapp /> </a>
+                            <a href="https://api.whatsapp.com/send/?phone=919822544067&text=hi Rohit" target="_blank" rel="noreferrer" > <BsWhatsapp /> </a>
                         </div>
                     </div>
                 </div>

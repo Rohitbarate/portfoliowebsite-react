@@ -1,3 +1,7 @@
+:root{
+    --red:#e83041
+}
+
 .section {
     padding: 20px 20px;
     gap: 40px;
@@ -51,7 +55,8 @@
 .right .info>:nth-child(1) {
     font-size: 1.5rem;
     font-weight: 500;
-    color: crimson;
+    /* color: crimson; */
+    color: var(--red);
 }
 
 .center {

@@ -4,7 +4,8 @@
     justify-content: space-between;
     padding: 0px 20px;
     height: 10vh;
-    background-color: rgb(197, 252, 233);
+    background-color: var(--theme-secondary-color);
+    color: var(--textcolor);
     position: sticky;
     top: 0px;
     z-index: 100;
@@ -62,7 +63,6 @@
     font-weight: 600;
     cursor: pointer;
     text-decoration: none;
-    color: rgb(0, 0, 0);
 position: relative;
 } 
 .items ul li::after{
@@ -70,7 +70,7 @@ position: absolute;
 width: 0%;
 height: 10%;
 content: "";
-background-color: crimson;
+background-color: #000;
 border-radius: 10px;
 bottom: 0;
     left: 0;
@@ -103,7 +103,8 @@ bottom: 0;
 
 }
 .active{
-    color: rgb(240, 6, 52);
+    color: #000;
+    font-weight: 600;
 }
 
 

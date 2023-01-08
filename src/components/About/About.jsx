@@ -37,11 +37,11 @@ const About = () => {
                     <div className="about-con">
                         <div className="label">Connect with Me :</div>
                         <div className="icon-cont">
-                            <a href="https://github.com/Rohitbarate" target="_blank" rel="noreferrer" ><BsGithub />  </a>
-                            <a href="https://www.instagram.com/__rohit_barate/" target="_blank" rel="noreferrer" > <BsInstagram /> </a>
-                            <a href="https://www.linkedin.com/in/rohit-barate100/" target="_blank" rel="noreferrer" > <BsLinkedin /> </a>
-                            <a href="https://www.facebook.com/rohit.barate.31/" target="_blank" rel="noreferrer" > <BsFacebook /> </a>
-                            <a href="https://api.whatsapp.com/send/?phone=919822544067&text=hi Rohit" target="_blank" rel="noreferrer" > <BsWhatsapp /> </a>
+                            <a href="https://github.com/Rohitbarate" target="_blank" rel="noopener noreferrer"><BsGithub />  </a>
+                            <a href="https://www.instagram.com/__rohit_barate/" target="_blank" rel="noopener noreferrer" > <BsInstagram /> </a>
+                            <a href="https://www.linkedin.com/in/rohit-barate100/" target="_blank" rel="noopener noreferrer" > <BsLinkedin /> </a>
+                            <a href="https://www.facebook.com/rohit.barate.31/" target="_blank" rel="noopener noreferrer" > <BsFacebook /> </a>
+                            <a href="https://api.whatsapp.com/send/?phone=919822544067&text=hi Rohit" target="_blank" rel="noopener noreferrer" > <BsWhatsapp /> </a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ const About = () => {
                         </div>
                     </div>
                     <button className='btn downloadcv-btn'>
-                        <a href="https://drive.google.com/file/d/1IHZOBsYVoX5KF0mb6t-NbyV9eMS5nuAM/view" target="_blank" rel="noreferrer" > Download CV <BsFillFileArrowDownFill /></a> </button>
+                        <a href="https://drive.google.com/file/d/1IHZOBsYVoX5KF0mb6t-NbyV9eMS5nuAM/view" target="_blank" rel="noopener noreferrer" > Download CV <BsFillFileArrowDownFill /></a> </button>
                 </div>
             </div>
         </div>

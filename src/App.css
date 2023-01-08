@@ -1,1 +1,12 @@
-
+:root{
+    --textcolor : #ffffff;
+    --theme-primary-bg-color:#001233;
+    --theme-secondary-color:#ea5824;
+}
+.section{
+    background-color: var(--theme-primary-bg-color);
+    color: var(--textcolor);
+}
+.heading-text{
+    color: var(--theme-secondary-color);
+}

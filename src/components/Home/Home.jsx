@@ -18,20 +18,22 @@ const cubeHoverLeave = () => {
 
 const Home = () => {
   // const transition = { duration: 2, type: 'spring' }
-  const [text, setText] = useState(professions[6]);
+  const [text, setText] = useState(professions[3]);
   const [index, setIndex] = useState(0);
+  // const [animTime,setAnimTime] = useState()
 
 // function for changing the profession texts
 useEffect(() => {
   setTimeout(() => {
     if (index < professions.length-1) {
+      // setAnimTime(professions[index].length * 500)
       setText(professions[index]);
       setIndex(index + 1);
     } else {
       setText(professions[index]);
       setIndex(0);
     }
-  }, 4000);
+  }, 5000);
 }, [index])
 
   
@@ -103,7 +105,11 @@ useEffect(() => {
         <div className="info">
           <span>About Me :</span>
           <span>
-            I'm a <span className="heading-text profText">{text}.</span><br/>I Like To Make responsive Websites
+            I'm a <span className="heading-text profText"
+            // style={{
+            //   '--anim-time':animTime+'ms'
+            // }}
+            >{text}.</span><br/>I Like To Make responsive Websites
             And Learn New Programming Languages.My favorite Programming Language
             is Javascript and this is the most powerfull language in the
             software industry.

@@ -10,6 +10,7 @@
   flex-direction: row-reverse;
   flex-wrap: wrap;
   height: 90vh;
+  box-sizing: border-box;
 }
 
 .left {
@@ -69,6 +70,7 @@
   font-variant-caps: petite-caps;
   letter-spacing: 1px;
   position: relative;
+  /* --anim-time:4000ms */
 }
 .profText::after{
   content: "";
@@ -78,7 +80,7 @@
   position: absolute;
   background-color: var(--theme-primary-bg-color);
   border-left: 5px solid var(--theme-secondary-color);
-  animation: typingTextAnim 3990ms reverse infinite linear;
+  animation: typingTextAnim 5000ms infinite linear;
 }
 .center {
   display: flex;
@@ -293,20 +295,20 @@
 @keyframes typingTextAnim {
   0%{
     width: 100%;
-    border-left-width: 5px;
+    /* border-left-width: 5px; */
   }
-  10%,20%,30%,40%,60%,70%,80%,90%{
+  /* 10%,20%,30%,40%,60%,70%,80%,90%{
     border-left-width: 5px;
-  }
-  5%,15%,25%,35%,55%,65%,75%,85%,95%{
+  } */
+  /* 5%,15%,25%,35%,55%,65%,75%,85%,95%{
     border-left-width: 0px;
-  }
+  } */
   50%{
     width: 0%;
-    border-left-width: 5px;
+    /* border-left-width: 5px; */
   }
   100%{
     width: 100%;
-    border-left-width: 5px;
+    /* border-left-width: 5px; */
   }
 }

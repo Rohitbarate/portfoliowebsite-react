@@ -1,7 +1,7 @@
 :root{
     --textcolor : #ffffff;
-    --theme-primary-bg-color:#001233;
-    --theme-secondary-color:#ea5824;
+    --theme-primary-bg-color:#023047;
+    --theme-secondary-color:#fb8500;
 }
 .section{
     background-color: var(--theme-primary-bg-color);

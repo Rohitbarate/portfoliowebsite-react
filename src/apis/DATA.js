@@ -1,6 +1,6 @@
 const professions = [
     "Full Stack Application Developer 📱😍...",
-    "Engineer 👽🤖...",
+    "Computer Engineer 👽🤖...",
     "Full Stack Website Developer 💻🤩...",
     "Javascript Addicted ✌️😵...",
     "React Native Developer 😏...",
